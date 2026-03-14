@@ -119,7 +119,10 @@ Pandas / NumPy / Scikit-learn
 
 Matplotlib / Seaborn
 
-ディレクトリ構成
+ディレクトリ構成とデータの取得方法
+
+※本リポジトリには、規約およびファイルサイズの関係上、Kaggleの生データ（CSVファイル）は含めておりません。
+コードを実行する場合は、Kaggleのコンペティションページ よりデータをダウンロードし、以下のディレクトリ構造になるように data/ フォルダ内に配置してください。
 
 .
 ├── notebooks/
@@ -128,10 +131,12 @@ Matplotlib / Seaborn
 │   ├── 03_stage2_strikeout_prediction.ipynb  # Stage 2（三振予測）モデル構築・アンサンブル
 │   └── 04_model_interpretation_and_whatif.ipynb # SHAP分析およびWhat-ifシミュレーション・統計検定
 ├── data/
-│   ├── train.csv
-│   └── test.csv
+│   ├── train.csv  # Kaggleより取得して配置
+│   └── test.csv   # Kaggleより取得して配置
+├── .gitignore     # data/*.csv 等を除外する設定
 ├── requirements.txt
 └── README.md
+
 
 
 👤 About Me
